@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<style>
+    .divider {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .divider::before,
+    .divider::after {
+        flex: 1;
+        content: '';
+        padding: 4px;
+        background-color:  #94d2bd;
+        margin: 2px;
+    }
+
+    .back {
+        background-color:  #0a9396;
+    }
+
+        {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: #0d3b66;
+        color: white;
+        transform: rotateY(180deg);
+    }
+</style>
+
+<body>
+    <div class="container-fluid p-3 back mt-3">
+        <div class="row ">
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3 text-white">
+                <h3>Janaki</h3>
+
+            </div>
+
+            <div class="col-sm-7">
+                <nav class="navbar navbar-expand-sm  justify-content-end">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="home.html"><b>HOME</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html"><b>ABOUT</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="education.html"><b>EDUCATION</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="expertience.html"><b>EXPERIENCE</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="projects.html"><b>PROJECTS</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="skills.html"><b>SKILLS</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="janaki resume .pdf" target="_blank"><b>RESUME</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html"><b>CONTACT</b></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-1">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-3">
+        <div class="divider">PROJECTS</div>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Images/library img.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h3>Library Management System</h3>
+                            <p>
+                                A library management system is a software application that helps librarians and library staff manage their libraries efficiently. It provides a centralized system for organizing, cataloging, and circulating library materials, as well as managing library users and their borrowing activities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Images/fire 3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back p-4">
+                            <h3>Forest Fire Detection</h3>
+                            <p>
+                                Detection of fire can be extremely difficult using existing methods of smoke sensors installed in the buildings. This project to detect using MobileNetCNN. This project uses self-built dataset containing video frames with fire.
+                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Images/crp img.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back p-2">
+                            <h3>Crop Weed Classification</h3>
+                            <p>
+                                
+                                Crop and Weed classification using Machine Learning involves the application of computational models to accurately distinguish between different plant types in agriculture settings. This research proposes an advanced approach to crop and weed classification using image processing techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>    
+    </div>
+</body>
+
+</html>
